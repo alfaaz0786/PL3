@@ -1,0 +1,44 @@
+unix@unix-HP-280-G1-MT:~$ ssh root@192.168.7.2The authenticity of host '192.168.7.2 (192.168.7.2)' can't be established.
+ECDSA key fingerprint is SHA256:CPKJ8HDcnSCKUJcq6AOOQet7fxfTBLyJksyn3Nau2N0.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.7.2' (ECDSA) to the list of known hosts.
+Debian GNU/Linux 7
+
+BeagleBoard.org Debian Image 2015-11-12
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+Last login: Thu Nov 12 19:35:32 2015 from unix-hp-280-g1-mt-7.local
+root@beaglebone:~# cd /home
+root@beaglebone:/home# ls
+SquareWave.py	 debian        sine_wave_dac.py  unix@unix-HP-280-G1-MT
+b.c		 elevator.py   sq_wave.py
+b.txt		 img.tiff      traffic.py
+cpu_freq_pwm.py  setIPnFTP.py  unix
+root@beaglebone:/home# python elevator.py
+
+Lift Operation Simulation using Python
+
+-----------------------------------------------
+
+
+Waiting for button press ...
+LIFT button is pressed for floor #2
+LIFT going UP to floor #2
+
+Waiting for button press ...
+LIFT button is pressed for floor #0
+LIFT going DOWN to floor #0
+
+Waiting for button press ...
+LIFT button is pressed for floor #3
+LIFT going UP to floor #3
+
+Waiting for button press ...
+^C
+=== Demonstration END ===
+
+Program Exit due to CTRL-C
+root@beaglebone:/home# 
